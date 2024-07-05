@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(230, 180, 164);
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: aquamarine;
+        }
+
+        nav>ul {
+            list-style: none;
+        }
+
+        nav>ul>li {
+            display: inline;
+        }
+
+        nav>ul>li>a {
+            color: #747171;
+            padding-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main {
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#"><img src="../../assets/svelte_logo.svg" width="40px" height="40px" alt="svelte_logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Ürünlerimiz</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            Main Content
+        </main>
+
+        <footer class="footer">
+            Footer
+        </footer>
+    </div>
+</body>
+
+</html>
