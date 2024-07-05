@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+
+    <style>
+        .flex-container-start {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: start;
+            background-color: aqua;
+            height: 120px;
+        }
+
+        .flex-container-center {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            background-color: aqua;
+            height: 120px;
+        }
+
+        .flex-container-end {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: end;
+            background-color: aqua;
+            height: 120px;
+        }
+
+        .flex-container-stretch {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+            background-color: aqua;
+            height: 120px;
+        }
+
+        div {
+            background-color: chartreuse;
+            margin: 10px;
+            padding: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>align-items</h1>
+    <p>
+        align-items: y koordinatındaki yerleşim için
+    </p>
+
+    <h3>align-items: start</h3>
+    <div class="flex-container-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>align-items: center </h3>
+    <div class="flex-container-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>align-items: end</h3>
+    <div class="flex-container-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>align-items: stretch</h3>
+    <div class="flex-container-stretch">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>
