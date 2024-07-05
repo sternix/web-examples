@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form - Ortalama</title>
+
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form_container {
+            width: 400px;
+            border-radius: 5%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .login_form {
+            margin: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="form_container">
+            <form action="" class="login_form">
+                <label>
+                    Kullanıcı Adı
+                    <input type="text">
+                </label>
+                <label>
+                    Şifre
+                    <input type="password">
+                </label>
+                <button type="submit">Giriş</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
