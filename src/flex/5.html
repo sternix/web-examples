@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            background-color: aqua;
+        }
+
+        .flex-container-end {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: end;
+            background-color: aqua;
+        }
+
+        .flex-container-center {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            background-color: aqua;
+        }
+
+        .flex-container-space-around {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            background-color: aqua;
+        }
+
+        .flex-container-space-between {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            background-color: aqua;
+        }
+
+        .flex-container-space-evenly {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            background-color: aqua;
+        }
+
+
+        div {
+            background-color: chartreuse;
+            margin: 10px;
+            padding: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>justify-content</h1>
+
+    <h3>justify-content: start</h3>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>justify-content: center</h3>
+    <div class="flex-container-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>justify-content: end</h3>
+    <div class="flex-container-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>justify-content: space-around</h3>
+    <div class="flex-container-space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>justify-content: space-between</h3>
+    <div class="flex-container-space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>justify-content: space-evenly</h3>
+    <div class="flex-container-space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+</body>
+
+</html>
