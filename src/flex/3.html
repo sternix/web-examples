@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+            flex-wrap: nowrap;
+        }
+
+        .flex-container-row-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: aqua;
+            flex-wrap: nowrap;
+        }
+
+        .flex-container-wrap {
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+            flex-wrap: wrap;
+        }
+
+        .flex-container-row-reverse-wrap {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: aqua;
+            flex-wrap: wrap;
+        }        
+
+        div {
+            background-color: chartreuse;
+            margin: 10px;
+            padding: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Container Wrap</h1>
+
+    <h3> flex-direction: row, flex-wrap: nowrap; varsayılan</h3>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h3> flex-direction: row-reverse; flex-wrap: nowrap;</h3>
+    <div class="flex-container-row-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h3> flex-direction: row, flex-wrap: wrap </h3>
+    <div class="flex-container-wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h3> flex-direction: row-reverse; flex-wrap: wrap</h3>
+    <div class="flex-container-row-reverse-wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+</body>
+
+</html>
