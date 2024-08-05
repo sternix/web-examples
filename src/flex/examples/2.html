@@ -1,0 +1,99 @@
+<!--
+https://codepen.io/markmead/pen/VGpvGm
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+
+    <style>
+        .flexing {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        @media screen and (min-width: 1000px) {
+            .flexing {
+                flex-direction: row;
+            }
+        }
+
+        .section {
+            flex: 1;
+            position: relative;
+            transition: 0.5s ease;
+        }
+
+        .section--yellow {
+            background-color: #eac435;
+        }
+
+        .section--pink {
+            background-color: #e40066;
+        }
+
+        .section--green {
+            background-color: #03cea4;
+        }
+
+        .section:hover,
+        .section:active,
+        .section:focus {
+            flex: 3;
+        }
+
+        .section:hover .title,
+        .section:active .title,
+        .section:focus .title {
+            transform: translate(-50%, -50%) rotate(0);
+        }
+
+        @media screen and (min-width: 1000px) {
+
+            .section:hover .title,
+            .section:active .title,
+            .section:focus .title {
+                transform: translate(-50%, -50%) scale(1.25);
+            }
+        }
+
+        .section .title {
+            font-family: "Fredoka One";
+            font-size: 5rem;
+            left: 50%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.5s ease;
+        }
+
+        @media screen and (min-width: 1000px) {
+            .section .title {
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flexing">
+        <div class="section section--yellow">
+            <h3 class="title">Work</h3>
+        </div>
+        <div class="section section--pink">
+            <h3 class="title">About</h3>
+        </div>
+        <div class="section section--green">
+            <h3 class="title">Contact</h3>
+        </div>
+    </div>
+</body>
+
+</html>
