@@ -1,0 +1,87 @@
+<!-- https://github.com/Chalarangelo/30-seconds-of-code/blob/master/content/snippets/css/s/shapes.md -->
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şekiller</title>
+
+    <style>
+        * {
+            margin-bottom: 10px;
+        }
+
+        .square {
+            width: 64px;
+            height: 64px;
+            background: #5394fd;
+        }
+
+        .rectangle {
+            width: 128px;
+            height: 64px;
+            background: #5394fd;
+        }
+
+        .circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: #5394fd;
+        }
+
+        .ellipse {
+            width: 128px;
+            height: 64px;
+            border-radius: 64px / 32px;
+            background: #5394fd;
+        }
+
+        .triangle-down {
+            width: 0;
+            height: 0;
+            border-top: 32px solid #5394fd;
+            border-left: 32px solid transparent;
+            border-right: 32px solid transparent;
+        }
+
+        .triangle-up {
+            width: 0;
+            height: 0;
+            border-bottom: 32px solid #5394fd;
+            border-left: 32px solid transparent;
+            border-right: 32px solid transparent;
+        }
+
+        .triangle-left {
+            width: 0;
+            height: 0;
+            border-right: 32px solid #5394fd;
+            border-top: 32px solid transparent;
+            border-bottom: 32px solid transparent;
+        }
+
+        .triangle-right {
+            width: 0;
+            height: 0;
+            border-left: 32px solid #5394fd;
+            border-top: 32px solid transparent;
+            border-bottom: 32px solid transparent;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="square"></div>
+    <div class="rectangle"></div>
+    <div class="circle"></div>
+    <div class="ellipse"></div>
+    <div class="triangle-down"></div>
+    <div class="triangle-up"></div>
+    <div class="triangle-left"></div>
+    <div class="triangle-right"></div>
+</body>
+
+</html>

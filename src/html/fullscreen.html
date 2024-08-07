@@ -1,0 +1,61 @@
+<!-- https://github.com/Chalarangelo/30-seconds-of-code/blob/master/content/snippets/css/s/fullscreen.md -->
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen</title>
+    <style>
+        .container {
+            margin: 40px auto;
+            max-width: 700px;
+        }
+
+        .element {
+            padding: 20px;
+            height: 300px;
+            width: 100%;
+            background-color: skyblue;
+            box-sizing: border-box;
+        }
+
+        .element p {
+            text-align: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        .element:fullscreen {
+            background-color: #e4708a;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <p><em>Fullscreen'e geçmek için butona tıklayın</em></p>
+        <div class="element" id="element">
+            <p>Fullscreen için :fullscreen pseudo sınıfı var</p>
+            <p>Fullscreen'de renk değişiyor</p>
+        </div>
+        <br />
+        <button>
+            Full Screen'e geç
+        </button>
+    </div>
+
+    <script>
+        let el = document.getElementById('element');
+        let btn = document.getElementsByTagName('button')[0];
+        btn.addEventListener('click', () => {
+            el.requestFullscreen();
+        })
+    </script>
+</body>
+
+</html>

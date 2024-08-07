@@ -1,0 +1,35 @@
+<!-- https://github.com/Chalarangelo/30-seconds-of-code/blob/master/content/snippets/css/s/shape-separator.md -->
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape seperator</title>
+
+    <style>
+        .shape-separator {
+            position: relative;
+            height: 5px;
+            background: #2785b0;
+        }
+
+        .shape-separator::after {
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12'%3E%3Cpath d='m12 0l12 12h-24z' fill='transparent'/%3E%3C/svg%3E");
+            position: absolute;
+            width: 100%;
+            height: 12px;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis similique asperiores aliquam porro cum eius, non tempore vel voluptatem quisquam cumque et, expedita debitis. Dolor, rem cupiditate! Commodi, blanditiis.</p>
+    <div class="shape-separator"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis similique asperiores aliquam porro cum eius, non tempore vel voluptatem quisquam cumque et, expedita debitis. Dolor, rem cupiditate! Commodi, blanditiis.</p>
+    <div class="shape-separator"></div>
+</body>
+
+</html>
