@@ -1,0 +1,35 @@
+<!-- https://github.com/Chalarangelo/30-seconds-of-code/blob/master/content/snippets/css/s/offscreen.md -->
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offscreen</title>
+    <style>
+        .offscreen {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Offscreen: Hides an element completely (visually and positionally) in the DOM while still allowing it to be
+        accessible.</p>
+    <p>Remove all borders and padding and hide the element's overflow.</p>
+    <p>Use clip to define that no part of the element is shown.</p>
+    <p>Make the height and width of the element 1px and negate them using margin: -1px.</p>
+    <p>Use position: absolute so that the element does not take up space in the DOM.</p>
+    <a class="button" href="https://google.com">
+        Learn More <span class="offscreen">about pants</span>
+    </a>
+</body>
+
+</html>
