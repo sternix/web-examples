@@ -1,0 +1,110 @@
+<!-- https://github.com/Chalarangelo/30-seconds-of-code/blob/master/content/snippets/css/s/print-stylesheet.md -->
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapor</title>
+
+    <style>
+        @media print {
+            @page {
+                size: A4;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body,
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            li {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 12pt;
+                font-weight: normal;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: bold;
+                margin-bottom: 0.5em;
+            }
+
+            h1 {
+                font-size: 24pt;
+            }
+
+            h2 {
+                font-size: 18pt;
+            }
+
+            h3 {
+                font-size: 14pt;
+            }
+
+            a:any-link {
+                color: #0000FF;
+                text-decoration: none;
+            }
+
+            a:any-link::after {
+                content: " [" attr(href) "] ";
+            }
+
+            img {
+                width: 100%;
+            }
+
+            header,
+            footer,
+            nav,
+            aside,
+            form,
+            iframe,
+            script {
+                display: none;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        HEADER - print'te görülmüyor
+    </header>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ipsum sit quis exercitationem soluta illo
+        consequatur cum. Ut quasi laudantium asperiores repudiandae enim incidunt assumenda, architecto quis atque
+        possimus laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ipsum sit quis exercitationem soluta illo
+        consequatur cum. Ut quasi laudantium asperiores repudiandae enim incidunt assumenda, architecto quis atque
+        possimus laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ipsum sit quis exercitationem soluta illo
+        consequatur cum. Ut quasi laudantium asperiores repudiandae enim incidunt assumenda, architecto quis atque
+        possimus laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ipsum sit quis exercitationem soluta illo
+        consequatur cum. Ut quasi laudantium asperiores repudiandae enim incidunt assumenda, architecto quis atque
+        possimus laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ipsum sit quis exercitationem soluta illo
+        consequatur cum. Ut quasi laudantium asperiores repudiandae enim incidunt assumenda, architecto quis atque
+        possimus laboriosam.</p>
+
+    <footer>
+        FOOTER - print'te görülmüyor
+    </footer>
+</body>
+
+</html>
