@@ -379,16 +379,55 @@
             }
         });
 
+        // taken from 
+        // https://codepen.io/jorgemaiden/pen/xoRKWN
+        function fadeIn(element, duration = 600) {
+            element.style.display = '';
+            element.style.opacity = 0;
+            let last = +new Date();
+            const tick = () => {
+                element.style.opacity = +element.style.opacity + (new Date() - last) / duration;
+                last = +new Date();
+                if (+element.style.opacity < 1) {
+                    (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+                }
+            };
+            tick();
+        }
+
+        // https://gist.github.com/alirezas/c4f9f43e9fe1abba9a4824dd6fc60a55
+        function fadeOut(el) {
+            el.style.opacity = 1;
+
+            (function fade() {
+                if ((el.style.opacity -= .1) < 0) {
+                    el.style.display = "none";
+                } else {
+                    requestAnimationFrame(fade);
+                }
+            })();
+        };
+
+        function fadeIn(el, display = "block") {
+            el.style.opacity = 0;
+            el.style.display = display;
+
+            (function fade() {
+                var val = parseFloat(el.style.opacity);
+                if (!((val += .1) > 1)) {
+                    el.style.opacity = val;
+                    requestAnimationFrame(fade);
+                }
+            })();
+        };
+
         const navTrigger = document.querySelector('.navTrigger');
         const mainListDiv = document.getElementById('mainListDiv');
         navTrigger.addEventListener('click', () => {
             navTrigger.classList.toggle('active');
             mainListDiv.classList.toggle('show_list');
+            fadeIn(mainListDiv);
         });
-        // TODO çalışmıyor
-
-        //$("#mainListDiv").fadeIn();
-
     </script>
 </body>
 
