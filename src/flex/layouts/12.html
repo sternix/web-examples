@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/examples/flexbox_nested_grid_1
+-->
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex örnek</title>
+
+    <style>
+        .wrapper {
+            display: flex;
+        }
+
+        .wrapper>div {
+            font-size: 4vh;
+            color: white;
+            background: hotpink;
+            margin: .1em;
+            padding: .3em;
+            border-radius: 3px;
+            flex: 1;
+        }
+
+        .wrapper .wrapper>div {
+            background: pink;
+            color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>1
+
+            <div class="wrapper">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <div class="wrapper">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="wrapper">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+
+        </div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+
+</body>
+
+</html>
